@@ -1,0 +1,145 @@
+EESchema Schematic File Version 4
+LIBS:tt_opt101_module-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Test tube photometer"
+Date "2018-11-13"
+Rev "0.1.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L tt_nano_HAT:opt101 O1
+U 1 1 5BEB65C6
+P 7500 2150
+F 0 "O1" H 7500 3015 50  0000 C CNN
+F 1 "opt101" H 7500 2924 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7500 2300 50  0001 C CNN
+F 3 "" H 7500 2300 50  0001 C CNN
+	1    7500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5BEB690C
+P 7500 3550
+F 0 "J1" V 7653 3363 50  0000 R CNN
+F 1 "Conn_01x03_Male" V 7562 3363 50  0000 R CNN
+F 2 "Connector_JST:JST_EH_B03B-EH-A_1x03_P2.50mm_Vertical" H 7500 3550 50  0001 C CNN
+F 3 "~" H 7500 3550 50  0001 C CNN
+	1    7500 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BEB3BC5
+P 6300 2450
+F 0 "R1" H 6370 2496 50  0000 L CNN
+F 1 "R" H 6370 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6230 2450 50  0001 C CNN
+F 3 "~" H 6300 2450 50  0001 C CNN
+	1    6300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2300 6300 1950
+Wire Wire Line
+	6300 1950 6800 1950
+$Comp
+L power:GND #PWR03
+U 1 1 5BEB3C76
+P 7150 3350
+F 0 "#PWR03" H 7150 3100 50  0001 C CNN
+F 1 "GND" H 7155 3177 50  0000 C CNN
+F 2 "" H 7150 3350 50  0001 C CNN
+F 3 "" H 7150 3350 50  0001 C CNN
+	1    7150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5BEB3CD5
+P 7850 3250
+F 0 "#PWR04" H 7850 3100 50  0001 C CNN
+F 1 "+5V" H 7865 3423 50  0000 C CNN
+F 2 "" H 7850 3250 50  0001 C CNN
+F 3 "" H 7850 3250 50  0001 C CNN
+	1    7850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3350 7600 3250
+Wire Wire Line
+	7600 3250 7850 3250
+Wire Wire Line
+	7150 3350 7400 3350
+$Comp
+L Device:R_POT RV1
+U 1 1 5BEB3EB0
+P 6900 2950
+F 0 "RV1" H 6830 2996 50  0000 R CNN
+F 1 "R_POT" H 6830 2905 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3214J_Horizontal" H 6900 2950 50  0001 C CNN
+F 3 "~" H 6900 2950 50  0001 C CNN
+	1    6900 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2600 6300 2800
+Wire Wire Line
+	6300 2800 6900 2800
+Wire Wire Line
+	7050 2950 7500 2950
+Wire Wire Line
+	8200 2950 8200 2550
+Wire Wire Line
+	7500 3350 7500 2950
+Connection ~ 7500 2950
+Wire Wire Line
+	7500 2950 8200 2950
+$Comp
+L power:+5V #PWR0101
+U 1 1 5BEB46F3
+P 6600 1650
+F 0 "#PWR0101" H 6600 1500 50  0001 C CNN
+F 1 "+5V" H 6615 1823 50  0000 C CNN
+F 2 "" H 6600 1650 50  0001 C CNN
+F 3 "" H 6600 1650 50  0001 C CNN
+	1    6600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5BEB4733
+P 8450 1650
+F 0 "#PWR0102" H 8450 1400 50  0001 C CNN
+F 1 "GND" H 8455 1477 50  0000 C CNN
+F 2 "" H 8450 1650 50  0001 C CNN
+F 3 "" H 8450 1650 50  0001 C CNN
+	1    8450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5BEB4768
+P 6650 2250
+F 0 "#PWR0103" H 6650 2000 50  0001 C CNN
+F 1 "GND" H 6655 2077 50  0000 C CNN
+F 2 "" H 6650 2250 50  0001 C CNN
+F 3 "" H 6650 2250 50  0001 C CNN
+	1    6650 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 1650 8450 1650
+Wire Wire Line
+	6800 1650 6600 1650
+Wire Wire Line
+	6800 2250 6650 2250
+$EndSCHEMATC

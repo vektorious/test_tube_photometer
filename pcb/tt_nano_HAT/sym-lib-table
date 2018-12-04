@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name tt_photometer-cache)(type Legacy)(uri /Users/alexanderkutschera/GitHub/test_tube_photometer/pcb/opt101_module/tt_photometer-cache.lib)(options "")(descr ""))
+  (lib (name tt_nano_HAT)(type Legacy)(uri /Users/alexanderkutschera/GitHub/test_tube_photometer/pcb/tt_nano_HAT/tt_nano_HAT.lib)(options "")(descr ""))
+)
