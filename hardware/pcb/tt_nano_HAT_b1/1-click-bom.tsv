@@ -1,0 +1,8 @@
+References	Qty	Description	Part Number
+A1	1	Arduino Nano v3.x	
+J1	1	PinHeader 1x04 P2.54mm Vertical	
+J2, J10	2	PinHeader 1x06 P2.54mm Vertical	
+J3	1	PinSocket 1x04 P2.54mm Vertical	
+J9, J8, J7, J6, J5, J4	6	JST EH B3B-EH-A 1x03 P2.50mm Vertical	B3B-EH-A(LF)(SN)
+R1, R8	2	10k Axial	
+R2, R3, R4, R5, R6, R7	6	220 Axial 	

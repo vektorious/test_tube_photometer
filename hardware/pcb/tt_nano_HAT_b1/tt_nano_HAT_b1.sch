@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
-LIBS:tt_nano_HAT-cache
+LIBS:tt_nano_HAT_b1-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Test tube photometer"
-Date "2018-11-13"
-Rev "0.1.1"
+Title "Test Tube Photometer"
+Date "2019-03-21"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -151,7 +151,7 @@ Wire Wire Line
 	3700 1550 3800 1550
 Connection ~ 3700 1950
 Wire Wire Line
-	3700 1550 3700 1150
+	3700 1550 3700 1300
 Wire Wire Line
 	3700 1150 3800 1150
 Connection ~ 3700 1550
@@ -491,4 +491,26 @@ Connection ~ 2600 4000
 Wire Wire Line
 	2400 4000 2500 4000
 Connection ~ 2500 4000
+$Comp
+L Connector:Conn_01x02_Male J11
+U 1 1 5C942AC0
+P 2450 1000
+F 0 "J11" H 2556 1178 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 2556 1087 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2450 1000 50  0001 C CNN
+F 3 "~" H 2450 1000 50  0001 C CNN
+	1    2450 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1300 2650 1100
+Wire Wire Line
+	2650 1000 3150 1000
+Wire Wire Line
+	3150 1000 3150 1300
+Wire Wire Line
+	3150 1300 3700 1300
+Connection ~ 3700 1300
+Wire Wire Line
+	3700 1300 3700 1150
 $EndSCHEMATC
