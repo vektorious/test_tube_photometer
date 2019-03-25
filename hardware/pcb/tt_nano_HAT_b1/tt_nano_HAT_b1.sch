@@ -338,8 +338,6 @@ Wire Wire Line
 Wire Wire Line
 	1650 2500 1550 2500
 Wire Wire Line
-	1550 2500 1550 2450
-Wire Wire Line
 	1550 2450 1400 2450
 Wire Wire Line
 	1650 2700 1450 2700
@@ -349,8 +347,6 @@ Wire Wire Line
 	1450 2550 1400 2550
 Wire Wire Line
 	1950 1950 2250 1950
-Wire Wire Line
-	2250 1950 2250 2000
 Wire Wire Line
 	1950 2100 2250 2100
 Wire Wire Line
@@ -365,8 +361,6 @@ Wire Wire Line
 	2050 2400 2050 2300
 Wire Wire Line
 	2050 2300 2250 2300
-Wire Wire Line
-	1950 2550 2100 2550
 Wire Wire Line
 	2100 2550 2100 2400
 Wire Wire Line
@@ -513,4 +507,45 @@ Wire Wire Line
 Connection ~ 3700 1300
 Wire Wire Line
 	3700 1300 3700 1150
+Wire Wire Line
+	2250 1950 2250 2000
+Wire Wire Line
+	1550 2500 1550 2450
+Wire Wire Line
+	1950 2550 2100 2550
+$Comp
+L Connector:Conn_01x03_Male J12
+U 1 1 5C9CC4B7
+P 1700 1200
+F 0 "J12" V 1760 1340 50  0000 L CNN
+F 1 "Conn_01x03_Male" V 1851 1340 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1700 1200 50  0001 C CNN
+F 3 "~" H 1700 1200 50  0001 C CNN
+	1    1700 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 1700 2150 1700
+Wire Wire Line
+	2150 1700 2150 1450
+Wire Wire Line
+	2150 1450 1800 1450
+Wire Wire Line
+	1800 1450 1800 1400
+Wire Wire Line
+	2250 1800 2100 1800
+Wire Wire Line
+	2100 1800 2100 1500
+Wire Wire Line
+	2100 1500 1700 1500
+Wire Wire Line
+	1700 1500 1700 1400
+Wire Wire Line
+	2250 1900 2050 1900
+Wire Wire Line
+	2050 1900 2050 1550
+Wire Wire Line
+	2050 1550 1600 1550
+Wire Wire Line
+	1600 1550 1600 1400
 $EndSCHEMATC

@@ -3,7 +3,7 @@
 
 int sensor = A1;  // output pin of OPT101 attached to Analog 5
 int opt_signal;
-int LED = 5; // digital pin for LED
+int LED =5; // digital pin for LED
 
 void setup() {
   Serial.begin(9600);
@@ -13,13 +13,13 @@ void setup() {
 
 void loop() {
   digitalWrite(LED, LOW);
-  delay(500);
+  delay(2000);
   opt_signal = analogRead(sensor);
   Serial.print(opt_signal);
   Serial.print("\n");
   delay(500);
   digitalWrite(LED, HIGH);
-  delay(500);
+  delay(2000);
   opt_signal = analogRead(sensor);
   Serial.print(opt_signal);
   Serial.print("\n");
