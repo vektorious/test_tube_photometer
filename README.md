@@ -1,5 +1,8 @@
 <p align="center">
-# Test Tube Photometer
+
+<h1 align="center">Test Tube Photomer</h1><img src="https://github.com/vektorious/test_tube_photometer/blob/master/pictures/tt_togo.png" width="300"/>
+
+<h3 align="center">Low-cost hardware setup for measuring optical densities</h3>
 </p>
 
 ## Welcome to the repository of the Test Tube Photometer project
