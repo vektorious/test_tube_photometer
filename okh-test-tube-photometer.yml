@@ -66,7 +66,7 @@ contributors:                              # recommended
 #    affiliation: [value]                   # text
     email: alexander.kutschera@gmail.com   # email address
 
-#image: [value]                             # recommended | absolute or relative path
+image: https://raw.githubusercontent.com/vektorious/test_tube_photometer/master/pictures/tt_logo.png                             # recommended | absolute or relative path
 
 #version: [value]                           # text
 
