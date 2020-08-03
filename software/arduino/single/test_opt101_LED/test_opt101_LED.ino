@@ -3,7 +3,7 @@
 
 int sensor = A1;  // output pin of OPT101 attached to Analog 5
 int opt_signal;
-int LED =5; // digital pin for LED
+int LED = 3; // digital pin for LED
 
 void setup() {
   Serial.begin(9600);

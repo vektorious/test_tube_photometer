@@ -1,0 +1,7 @@
+{
+    "programmer": "AVR ISP",
+    "board": "arduino:avr:nano",
+    "configuration": "cpu=atmega328old",
+    "port": "/dev/tty.wchusbserialfa130",
+    "sketch": "test_opt101/test_opt101.ino"
+}

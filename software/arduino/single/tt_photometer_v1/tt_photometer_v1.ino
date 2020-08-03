@@ -47,6 +47,7 @@ void loop() {
     digitalWrite(LED, HIGH);
     delay(500);
     measureBlank(10);
+    digitalWrite(LED, LOW);
     lcd.setCursor(0, 1);
     lcd.print("                ");
     lcd.setCursor(0, 1);
@@ -61,6 +62,7 @@ void loop() {
     digitalWrite(LED, HIGH);
     delay(500);
     measureOD(10);
+    digitalWrite(LED, LOW);
     lcd.setCursor(0, 1);
     lcd.print("                ");
     lcd.setCursor(0, 1);
