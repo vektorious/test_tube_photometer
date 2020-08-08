@@ -24,9 +24,29 @@ Photometers are used to measure light extinction in liquids to analyse their con
 #### Why a test tube photometer?
 Well, I'm a lazy person. In order to measure the optical density of my bacterial cultures I always had to take a sample from them. This usually meant I had to work sterile to avoid contamination of my cultures which is a bit time consuming. That's why I asked myself if there is a way to measure the density directly in the test tube without having to open it. There are already some test tube photometer out there but they are expensive and often require the use of specific test tubes. That's why I started to develop a photometer which I could use with the standard test tubes.
 
-### Building instructions
+### Assembly instructions
 
-TODO
+The photometer is designed to be modular. You can add as many measurement cells as you like (well ok. you are limited by the amounts of analog inputs your microcontroller has).
+
+There are two was of building the photometer:
+
+#### 1. Using a breadboard and cables
+
+**Advantage:**
+You don't need many special parts apart from the sensor (opt101). Some cables, resistors and a breadboard are required as well.
+
+**Disadvantage:**
+The connections are not very stable which could produce reading errors. Wiring the opt101 just with cable is a bit confusing (at least it was for me). Apart from that, the legs of the sensor break easily if you bend them to often and too much.
+
+#### 2. Using PCBs (Arduino Nano HAT and the sensor PCB)
+
+**Advantage:**
+All the electronics are easy to put together. The connections are stable and secure. You can quickly add connect more measurement cells.
+
+**Disadvantage:**
+Well.. you need the PCBs. But you can easily order them from a PCB manufacturer with the gerber files in this repository. You'll find more info about this in [/hardware/pcb/README]().
+
+Both ways of building the photometer are described [in the instructions folder]().
 
 ### Contributing
 
