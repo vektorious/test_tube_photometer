@@ -2,6 +2,12 @@
 
 ## tt_nano_HAT_b1
 
+First version of a Arduino Nano HAT to connect multiple photometer cells.
+It works BUT.
+
+Problems:
+- jst connectors too close together
+
 ## tt_nano_HAT_b2
 
 ## tt_opt101_module_b1

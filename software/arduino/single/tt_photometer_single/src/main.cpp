@@ -15,6 +15,7 @@ int buttonMeasure = 10;
 
 int blank = 0;
 float blankValue = 0;
+bool trouble = false;
 bool blanked = false;
 int measure = 0;
 
@@ -65,13 +66,52 @@ void setup() {
   pinMode(buttonBlank, INPUT_PULLUP);
   pinMode(buttonMeasure, INPUT_PULLUP);
   delay(1000);
+  lcd.clear();
+
+
+  for (int i = 0; i < 10; i++)
+  {
+    lcd.setCursor(0, 0);
+    lcd.print("Starting ... ");
+    lcd.print(i);
+    measure = digitalRead(buttonMeasure);
+    blank = digitalRead(buttonBlank);
+    delay(500);
+    if (measure == LOW || blank == LOW)
+    {
+      trouble = true;
+      lcd.clear();
+      lcd.print("Troubleshooting");
+      lcd.setCursor(0, 1);
+      lcd.print("Mode");
+      delay(1000);
+      break;
+    }
+    
+  }
+  
+  lcd.clear();
+  lcd.print("Press Button");
+  lcd.setCursor(0, 1);
+  lcd.print("to start :)");
 }
 
 void loop() {
   measure = digitalRead(buttonMeasure);
   blank = digitalRead(buttonBlank);
 
-  if(blank == LOW){
+  if (trouble == true)
+  {
+    lcd.clear();
+    lcd.print("Showing raw signal ...");
+    lcd.setCursor(0, 1);
+    digitalWrite(LED, HIGH);
+    delay(100);
+    lcd.print(analogRead(sensor));
+    delay(500);
+  }
+
+  else if(blank == LOW){
     lcd.clear();
     lcd.print("Measuring Blank ...");
     lcd.setCursor(0, 1);
@@ -86,7 +126,7 @@ void loop() {
     lcd.print("Blanked");
   }
   
-  if(measure == LOW){
+  else if(measure == LOW){
     lcd.clear();
     lcd.print("Measuring OD ...");
     lcd.setCursor(0, 1);
@@ -102,17 +142,6 @@ void loop() {
     if(blanked == false){
       lcd.print("raw value");
     }
-  }
-
-  if (blanked == false)
-  {
-    lcd.clear();
-    lcd.print("Showing raw signal ...");
-    lcd.setCursor(0, 1);
-    digitalWrite(LED, HIGH);
-    delay(100);
-    lcd.print(analogRead(sensor));
-    delay(500);
   }
   
 }
