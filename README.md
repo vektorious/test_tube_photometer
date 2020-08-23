@@ -28,13 +28,13 @@ Photometers are used to measure light extinction in liquids to analyse their con
 Well, I'm a lazy person. In order to measure the optical density of my bacterial cultures I always had to take a sample from them. This usually meant I had to work sterile to avoid contamination of my cultures which is a bit time consuming. That's why I asked myself if there is a way to measure the density directly in the test tube without having to open it. There are already some test tube photometer out there but they are expensive and often require the use of specific test tubes. That's why I started to develop a photometer which I could use with the standard test tubes.
 
 <p align="center">
-<img src="https://github.com/vektorious/test_tube_photometer/blob/master/pictures/tt_photometer.png" height="100"/>
+<img src="https://github.com/vektorious/test_tube_photometer/blob/master/pictures/tt_photometer_small.png" height="300"/>
 
 #### And why a flow-through photometer?
 With a flow-through photometer can be used to monitor light extinction in any liquid independent of the container. The sample is constantly pumped through the photometer and OD is measured over time. I started to work on a flow-through version of the test tube photometer as part of a [Biomaker](https://www.biomaker.org/) project. We were developing an [low-cost microbial bioreactor](https://www.hackster.io/open-bioeconomy-lab/microbial-bioreactor-d7f61b) and I was looking into ways to measure the culture density in the device over time. But you can also use it for example to measure culture densities in a beaker or monitor the turbidity of river water.
 
 <p align="center">
-<img src="https://github.com/vektorious/test_tube_photometer/blob/master/pictures/flow_through.png" height="100"/>
+<img src="https://github.com/vektorious/test_tube_photometer/blob/master/pictures/flow_through_small.png" height="300"/>
 
 ### Assembly instructions
 
