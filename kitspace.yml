@@ -1,0 +1,22 @@
+multi:
+  tt_nano_HAT_b1:
+    summary: Test Tube Photometer Arduino Nano HAT - Version 1
+    readme: hardware/pcb/README.md
+    bom: hardware/pcb/tt_nano_HAT_b1/1-click-bom.csv
+    eda:
+      type: kicad
+      pcb: hardware/pcb/tt_nano_HAT_b1/tt_nano_HAT_b1.kicad_pcb
+  tt_nano_HAT_b2:
+    summary: Test Tube Photometer Arduino Nano HAT - Version 2
+    readme: hardware/pcb/README.md
+    bom: hardware/pcb/tt_nano_HAT_b2/1-click-bom.csv
+    eda:
+      type: kicad
+      pcb: hardware/pcb/tt_nano_HAT_b2/tt_nano_HAT_b2.kicad_pcb
+  tt_opt101_module:
+    summary: Test Tube Photometer opt101 module.
+    readme: hardware/pcb/README.md
+    bom: hardware/pcb/tt_opt101_module_b1/tt_opt101_module_b1.kicad_pcb
+    eda:
+      type: kicad
+      pcb: hardware/pcb/tt_opt101_module_b1/tt_opt101_module_b1.kicad_pcb

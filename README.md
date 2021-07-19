@@ -56,7 +56,7 @@ The connections are not very stable which could produce reading errors. Wiring t
 All the electronics are easy to put together. The connections are stable and secure. You can quickly add connect more measurement cells.
 
 **Disadvantage:**
-Well.. you need the PCBs. But you can easily order them from a PCB manufacturer with the gerber files in this repository. You'll find more info about this in [/hardware/pcb/README.md](https://github.com/vektorious/test_tube_photometer/tree/master/hardware).
+Well.. you need the PCBs. But you can easily order them from a PCB manufacturer with the gerber files in this repository. You'll find more info about this in [/hardware/pcb/README.md](https://github.com/vektorious/test_tube_photometer/tree/master/hardware/pcb).
 
 Both ways of building the photometer are described [in the instructions folder](https://github.com/vektorious/test_tube_photometer/tree/master/instructions).
 
