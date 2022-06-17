@@ -68,7 +68,7 @@ contributors:                              # recommended
 #    affiliation: [value]                   # text
     email: alexander.kutschera@gmail.com   # email address
 
-image: pictures/tt_logo.png                             # recommended | absolute or relative path
+image: pictures/tt_photometer_small.png                            # recommended | absolute or relative path
 
 #version: [value]                           # text
 
