@@ -5,13 +5,13 @@
 
 // Set the LCD address to 0x3F for a 16 chars and 2 line display
 // adjust first parameter to the I2C address of your LCD. Check it via the I2C scanner
-LiquidCrystal_I2C lcd(0x3F, 16, 2);
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 // Input/Output
 int sensor = A1;  // input pin of OPT101 attached to Analog 1
 int buttonBlank = 9; // input pin for blank button
 int buttonMeasure = 10; // input pin for measure button
-int LED = 8; // output pin for blank button
+int LED = 3; // output pin for blank button
 
 // Variables
 float opt_signal;
@@ -21,7 +21,8 @@ float blankValue = 0;
 int measure = 0;
 
 // Add factor from calibration curve to calculate concentration
-int factor = 0;
+int factor = 1;
+bool calibrated = false;
 
 bool trouble = false;
 bool blanked = false;
@@ -53,7 +54,7 @@ void measureOD(int multiplier) { // multiplier determines how many measurements 
   if (blanked == true){ // output of OD if blanked
     opt_signal = opt_signal/multiplier;
     OD = -log10(opt_signal/blankValue);
-    if(factor =! 0){
+    if(calibrated){
       OD = OD*factor;
     }
   }
@@ -157,7 +158,7 @@ void loop() {
     lcd.setCursor(0, 1);
     lcd.print(OD);
 
-    if (factor =! 0){
+    if (calibrated){
       lcd.print(" g/L");
     }
 

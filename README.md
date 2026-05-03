@@ -9,7 +9,7 @@ Flow-through Photometer
 
 ## Welcome!
 
-You can find a description on how to build the OLD VERSION of the photometer [here](https://alexanderkutschera.com/2017/12/09/photometer-shopping-list.html).
+You can find a description on how to build the OLD VERSION of the photometer [here](https://alexanderkutschera.com/research/photometer-shopping-list.html).
 
 - [What's this all about?](#background)
 - [How can I build my own photometer?](#building-instructions)
